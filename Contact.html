@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		covid|ContactUs
+	</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	
+
+      <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+  <div class="sidebar">
+       <header>Menu</header>
+  <ul>
+<li><a href="indiacorona.php"><i class="fas fa-qrcode"></i>Home</a></li>
+<li><a href="safety.html"><i class="fas fa-link"></i>Precautions</a></li>
+<li><a href="Quiz.php"><i class="fas fa-stream"></i>Quiz</a></li>
+
+<li><a href="About.html"><i class="far fa-question-circle"></i>About</a></li>
+
+<li><a href="Contact.html"><i class="far fa-envelope"></i>Helpline</a></li>
+</ul>
+</div>
+<br>
+<br>
+<br>
+<div class="content">
+
+		<h1 style="font-size: 3em;text-align: center; font-family: roboto;margin-top: -1%;">Get in Touch</h1>
+
+		<h2 style="text-align: center; margin-top: -2%;">Feel free to drop us a line to contact Us...</h2>
+
+		<div  id="y"style="margin-left: 5%; margin-top: 8%;" >
+      
+    
+			<h2 style="font-size: 2em;">Feel Free To Contact</h2>
+			<p id="x" style="display: inline; text-align: left;">
+        <br>
+				Hello Everyone! Have a great day :) I am here to help you. </p><p>
+				If you want to know something or you have any suggestion then please mail me. 
+        <p>Thank You.</p>
+			</p>
+      <br>
+	
+		<address > kummarswamylayout bangalore,karanatka.</address>
+		<email>amankumarsingh4282@gmail.com</email>
+		<br>
+		<phone >8271931942</phone>
+    <br>
+    <br>
+    </div>
+    <div id="z">
+    <h2 style="font-size: 2em; margin-left: 5%;">Help</h2>
+      <br>
+     <a href="chart.html" style="margin-left: 5%;">click here to get helpline numbers</a>
+      </div>
+
+		<script type="text/javascript">var submitted=false;</script>
+
+         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+         onload="if(submitted) {window.location='file:///C:/xampp/htdocs/covid/contact.html';}">
+    
+         	
+         </iframe> 
+
+
+		<form  id="f" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeddYIUkPv13RSG3MLUteKUmk750q2Uc3BEI-N2J68GRnuoiQ/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+      <div id="form-text"><i >
+		Full name:-<input  type="text" id="name" name="entry.5407113"></i>
+		
+			<i style="margin-right: 3%;">
+    Contact no:-<input type="text" id="phone" name="entry.1172760407"></i>
+    <i style="margin-right: 2%;">
+			Email-id:-<input type="text" id="email" name="entry.1628497641"></i>
+      
+        <i style="margin-right: 2%;">
+	        Messege:-<input type="text" name="entry.375285214" id="messege"  ></i>
+			<button type="submit" class="common_btn" >send</button>
+    </div>
+	 </form>
+     
+
+
+
+
+
+ <script type="text/javascript">
+    function validateName() {
+            var name = document.getElementById('name').value;
+            if(name.length == 0) {
+              alert("Name can't be blank") ;
+              return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+              alert("Please enter your correct name") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+
+          function validatePhone() {
+            var phone = document.getElementById('phone').value;
+            if(phone.length == 0) {
+              alert("Phone number can't be blank") ;//Validation Message
+              return false;
+            }
+
+            if(!phone.match(/^[0]?[789]\d{9}$/)) {
+             alert("Please enter a correct phone number") ;//Validation Message
+             return false;
+           }
+
+           return true;
+
+         }
+
+         function validateEmail () {
+
+          var email = document.getElementById('email').value;
+          if(email.length == 0) {
+            alert("Email can't be blank") ;//Validation Message
+            return false;
+
+          }
+
+          if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+            alert("Please enter a correct email address") ;//Validation Message
+            return false;
+
+          }
+
+          return true;
+
+        }
+         function validatemessege () {
+
+          var messege = document.getElementById('messege').value;
+          if(messege.length == 0) {
+            alert("messege can't be blank") ;//Validation Message
+            return false;
+
+          }
+
+          return true;
+
+        }
+
+
+        function validateForm() {
+          if (!validateName() || !validatePhone() || !validateEmail() ||!validatemessege ()) {
+
+            alert("Form not submitted");//Validation Message
+            return false;
+          }
+          else {
+            submitted=true;
+            return true;
+          }
+        }
+        </script>
+
+
+</body>
+</html>
+
+
+
+
